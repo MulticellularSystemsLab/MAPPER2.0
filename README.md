@@ -2,6 +2,15 @@
 
 This repository contains the source code for **MAPPER 2.0**, that was used for quantitative analysis of *Drosophila* wings for the manuscript **"A machine-learning enhanced data fusion pipeline identifies new G-protein-based regulators of *Drosophila* wing growth and morphogenesis."** MAPPER 2.0 provides a graphical user interface (GUI) for segmentation, feature extraction, and batch processing of adult *Drosophila* wings. Additional details on the workflow and GUI usage are provided in the documentation.
 
+## Improvements and upgrades over MAPPER 1.0
+  - Transitioning from MATLAB to a standalone Python-based GUI
+  - Deep learning integration (ResNet-18) for automated qualitative classification of severe phenotypes (crumpled, melanotic, domain, etc.) alongside U-Net segmentation and KNN compartment labeling
+  - Automated wing auto-cropping from slide-scanner outputs
+  - Improved quantitative morphometrics, including intervein compartment measurements, biological axes (AP/PD), crossvein defects, and cell packing/trichome density quantification
+  - End-to-end batch processing capabilities exporting directly to standardized CSV summary files
+
+
+
 ## Installation
 
 ### Prerequisites
